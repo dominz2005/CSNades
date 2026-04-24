@@ -45,4 +45,4 @@ export const ViewMode = {
     THROW: 'throw'
 };
 
-export const lineupDir = "/lineups/"
+export const lineupDir = "https://pub-19fffafaffb44084b539d1ea7788bad8.r2.dev/"

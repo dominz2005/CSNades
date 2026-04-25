@@ -236,9 +236,6 @@
                 <div class="p-2 transition-colors bg-[##171717] hover:bg-slate-500/40 rounded-full":class="targetScale <= MINZOOM ? 'opacity-60' : 'cursor-pointer'" @click="handleZoom(-0.25)">
                     <ZoomOut class="size-7" />
                 </div>
-                <div class="p-2 transition-colors bg-[##171717] hover:bg-slate-500/40 rounded-full cursor-pointer">
-                    <Dots class="size-7" />
-                </div>
             </div>
             <slot name="controls" />
         </div>

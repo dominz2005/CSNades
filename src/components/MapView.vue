@@ -6,7 +6,6 @@
     import { useFilterStore } from '@/stores/useFilterStore';
     import { GrenadeTypes, ViewMode } from '@/assets/constants';
     
-    import Dots from '@/icons/Dots.vue';
     import ZoomIn from '@/icons/ZoomIn.vue';
     import ZoomOut from '@/icons/ZoomOut.vue';
     import Refresh from '@/icons/Refresh.vue';

@@ -539,6 +539,105 @@ const rawNades = [
             images: ["lineup.jpg", "position.jpg", "smoke.jpg"]
         }
     },
+    {
+        type: GrenadeTypes.SMOKE,
+        throwPos: { x: 67.6, y: 49.7 },
+        landPos: { x: 67.7, y: 24.2 },
+        information: {
+            technique: Techniques.STANDING,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.CROUCH,
+            title: "CT Deep Smoke",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos 516.029358 983.629028 64.430634;setang -53.163048 89.016006 0.000000",
+            dir: "A Site/CT/Deep",
+            images: ["lineup.jpg", "position.jpg", "smoke.jpg"]
+        }
+    },
+    {
+        type: GrenadeTypes.FIRE,
+        throwPos: { x: 96.9, y: 57.5 },
+        landPos: { x: 81.7, y: 16.0 },
+        information: {
+            technique: Techniques.JUMP,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Site From Pit Plat",
+            movement: MovementTypes.RUNNING,
+            precision: PrecisionTypes.DYNAMIC,
+            command: "setpos 1768.968750 668.082886 119.937500;setang 5.741978 107.231956 0.000000",
+            dir: "A Site/Site/Fire",
+            images: ["lineup.jpg", "position.jpg", "fire.jpg"]
+        }
+    },
+    {
+        type: GrenadeTypes.FLASH,
+        throwPos: { x: 72.6, y: 59.7 },
+        landPos: { x: 65.6, y: 52.8 },
+        information: {
+            selfFlash: true,
+            technique: Techniques.JUMP,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Long Doors Exit Far",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos 740.935120 565.968750 64.282921;setang -40.557098 152.177765 0.000000",
+            dir: "Long/Double Doors/Exit Flash/Far",
+            images: ["lineup.jpg", "position.jpg"]
+        }
+    },
+    {
+        type: GrenadeTypes.FLASH,
+        throwPos: { x: 72.6, y: 59.7 },
+        landPos: { x: 81.7, y: 16.0 },
+        information: {
+            selfFlash: true,
+            technique: Techniques.JUMP,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Long Doors Exit Close",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos 740.935120 565.968750 64.282921;setang -57.387119 51.956860 0.000000",
+            dir: "Long/Double Doors/Exit Flash/Close",
+            images: ["lineup.jpg", "position.jpg"]
+        }
+    },
+    {
+        type: GrenadeTypes.FLASH,
+        throwPos: { x: 15.8, y: 35.3 },
+        landPos: { x: 17.4, y: 33.4 },
+        information: {
+            technique: Techniques.STANDING,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.CROUCH,
+            title: "Whole B Site From Car",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos -1616.347290 1641.301758 66.142120;setang -4.752133 48.359756 0.000000",
+            dir: "B Site/Site From Car",
+            images: ["lineup.jpg", "position.jpg"]
+        }
+    },
+    {
+        type: GrenadeTypes.FLASH,
+        throwPos: { x: 46.2, y: 17.7 },
+        landPos: { x: 45.7, y: 38.2 },
+        information: {
+            selfFlash: true,
+            technique: Techniques.STANDING,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Whole Mid From CT",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos -337.031250 2423.968994 -27.441956;setang -20.460142 -90.339195 0.000000",
+            dir: "Mid/Whole Flash",
+            images: ["lineup.jpg", "position.jpg"]
+        }
+    },
 ];
 
 export const dust2Nades = rawNades.map(nade => {

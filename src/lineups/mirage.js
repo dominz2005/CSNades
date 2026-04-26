@@ -692,9 +692,45 @@ const rawInsta = [
         landPos: { x: 36.9, y: 43.8 },
         title: "TT Instant Mid Window Smokes",
         dir: "Insta Mid Smokes",
-        amount: 5,
         exec: "mirage",
-        shortcut: "F6"
+        shortcut: "F6",
+        spawns: [
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STEP,
+                precision: PrecisionTypes.RELAXED,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STEP,
+                precision: PrecisionTypes.RELAXED,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STEP,
+                precision: PrecisionTypes.RELAXED,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STEP,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STEP,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+        ]
     },
 ];
 

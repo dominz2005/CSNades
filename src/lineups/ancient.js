@@ -403,8 +403,141 @@ const rawNades = [
     },
 ];
 
+const rawInsta = [
+    {
+        throwPos: { x: 52.2, y: 8.4 },
+        landPos: { x: 39.5, y: 58.3 },
+        title: "CT Instant Bottom Mid Smokes",
+        dir: "Insta Mid CT Smokes",
+        exec: "ancient_ct",
+        shortcut: "F6",
+        spawns: [
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.WALKING,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STEP,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STEP,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STEP,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.WALKING,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+        ]
+    },
+    {
+        throwPos: { x: 52.2, y: 8.4 },
+        landPos: { x: 88.1, y: 62.8 },
+        title: "CT Instant B Doors Smokes",
+        dir: "Insta B Doors Smokes",
+        exec: "ancient_ct",
+        shortcut: "F6",
+        spawns: [
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.RUNNING,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.RUNNING,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.RUNNING,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.RUNNING,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.RUNNING,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+        ]
+    },
+    {
+        throwPos: { x: 49.1, y: 92 },
+        landPos: { x: 48.5, y: 36.4 },
+        title: "TT Instant Top Mid Smokes",
+        dir: "Insta Mid TT Smokes",
+        exec: "ancient_tt",
+        shortcut: "F7",
+        spawns: [
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.JUMPSTEP,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.JUMPSTEP,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.JUMPSTEP,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+        ]
+    },
+];
+
 export const ancientNades = rawNades.map(nade => {
     const slug = nade.information.title
+        .toLowerCase()
+        .replace(/\s+/g, '_');
+
+    return {
+        id: slug, ...nade,
+    };
+});
+export const ancientInstaNades = rawInsta.map(nade => {
+    const slug = nade.title
         .toLowerCase()
         .replace(/\s+/g, '_');
 

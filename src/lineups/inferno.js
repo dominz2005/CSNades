@@ -657,8 +657,125 @@ const rawNades = [
     },
 ];
 
+const rawInsta = [
+    {
+        throwPos: { x: 92.6, y: 35.2 },
+        landPos: { x: 48.7, y: 37.9 },
+        title: "CT Instant Banana Smokes",
+        dir: "Insta Banana Smokes",
+        exec: "inferno",
+        shortcut: "F6",
+        spawns: [
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STATIONARY,
+                precision: PrecisionTypes.RELAXED,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STATIONARY,
+                precision: PrecisionTypes.RELAXED,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STATIONARY,
+                precision: PrecisionTypes.RELAXED,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STATIONARY,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STATIONARY,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STATIONARY,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+        ]
+    },
+    {
+        throwPos: { x: 92.6, y: 35.2 },
+        landPos: { x: 50.3, y: 69.0 },
+        title: "CT Instant Mid Smokes",
+        dir: "Insta Mid CT Smokes",
+        exec: "inferno",
+        shortcut: "F6",
+        spawns: [
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STATIONARY,
+                precision: PrecisionTypes.RELAXED,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STATIONARY,
+                precision: PrecisionTypes.RELAXED,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STATIONARY,
+                precision: PrecisionTypes.RELAXED,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.JUMPSTEP,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.JUMPSTEP,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.JUMPSTEP,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+        ]
+    },
+];
+
+
 export const infernoNades = rawNades.map(nade => {
     const slug = nade.information.title
+        .toLowerCase()
+        .replace(/\s+/g, '_');
+
+    return {
+        id: slug, ...nade,
+    };
+});
+export const infernoInstaNades = rawInsta.map(nade => {
+    const slug = nade.title
         .toLowerCase()
         .replace(/\s+/g, '_');
 

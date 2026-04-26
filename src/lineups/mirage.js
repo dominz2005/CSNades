@@ -686,8 +686,29 @@ const rawNades = [
     },
 ];
 
+const rawInsta = [
+    {
+        throwPos: { x: 93.4, y: 30.9 },
+        landPos: { x: 36.9, y: 43.8 },
+        title: "TT Instant Mid Window Smokes",
+        dir: "Insta Mid Smokes",
+        amount: 5,
+        exec: "mirage",
+        shortcut: "F6"
+    },
+];
+
 export const mirageNades = rawNades.map(nade => {
     const slug = nade.information.title
+        .toLowerCase()
+        .replace(/\s+/g, '_');
+
+    return {
+        id: slug, ...nade,
+    };
+});
+export const mirageInstaNades = rawInsta.map(nade => {
+    const slug = nade.title
         .toLowerCase()
         .replace(/\s+/g, '_');
 

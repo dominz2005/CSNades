@@ -11,6 +11,7 @@ import Anubis from '@/views/Anubis.vue';
 import Nuke from '@/views/Nuke.vue';
 
 import NadeDetails from '@/views/NadeDetails.vue'
+import InstaDetails from '@/views/InstaDetails.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -60,6 +61,12 @@ const router = createRouter({
       path: '/:map/:type/:id',
       name: 'nade-details',
       component: NadeDetails,
+      meta: { hideNavbar: true }
+    },
+    {
+      path: '/:map/insta/:id',
+      name: 'insta-details',
+      component: InstaDetails,
       meta: { hideNavbar: true }
     },
   ]

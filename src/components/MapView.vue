@@ -9,6 +9,7 @@
     import ZoomIn from '@/icons/ZoomIn.vue';
     import ZoomOut from '@/icons/ZoomOut.vue';
     import Refresh from '@/icons/Refresh.vue';
+import InstaSmoke from './InstaSmoke.vue';
 
     const props = defineProps({
         nades: {
@@ -209,6 +210,8 @@
             ? groupedNades.value
             : groupedThrowNades.value
     );
+
+    const hoveredInsta = computed(() => filterStore.hoveredInstaSmoke);
     
     onMounted(() => {
         document.addEventListener('click', closeAll);
@@ -252,6 +255,7 @@
                 </div>
 
                 <Nade
+                    v-if="!hoveredInsta"
                     v-for="(item, index) in activeGroupedNades"
                     :key="index"
                     :map="mapName"
@@ -266,7 +270,16 @@
                     :scale="scale"
                     @toggle="setActive(index)"
                 />
-
+                <InstaSmoke 
+                    v-else
+                    :map="mapName"
+                    :from-throw="filterStore.viewMode == ViewMode.THROW"
+                    :main-pos="filterStore.viewMode == ViewMode.THROW ? hoveredInsta.throwPos : hoveredInsta.landPos"
+                    :end-pos="filterStore.viewMode == ViewMode.THROW ? hoveredInsta.landPos : hoveredInsta.throwPos"
+                    :is-visible="true"
+                    :aspect-ratio="aspectRatio"
+                    :scale="scale"
+                />
             </div>
         </div>
     </main>

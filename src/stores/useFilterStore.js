@@ -12,7 +12,8 @@ export const useFilterStore = defineStore('filters', {
       onlySelfFlash: false,
       hideSelfFlash: false,
     },
-    viewMode: ViewMode.LAND
+    viewMode: ViewMode.LAND,
+    hoveredInstaSmoke: null
   }),
   actions: {
     toggleNade(id) {
@@ -65,6 +66,12 @@ export const useFilterStore = defineStore('filters', {
     },
     toggleViewMode() {
       this.viewMode = this.viewMode == ViewMode.LAND ? ViewMode.THROW : ViewMode.LAND;
+    },
+    setHoveredInstaSmoke(item) {
+      this.hoveredInstaSmoke = item;
+    },
+    clearHoveredInstaSmoke() {
+      this.hoveredInstaSmoke = null;
     }
   }
 });

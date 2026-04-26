@@ -539,7 +539,7 @@ const rawNades = [
             technique: Techniques.JUMP,
             mouseAction: MouseAction.LEFT,
             aiming: AimingTypes.NORMAL,
-            title: "Stairs From CT",
+            title: "Stairs From B",
             movement: MovementTypes.STATIONARY,
             precision: PrecisionTypes.RELAXED,
             command: "setpos -1329.120728 900.036316 64.000000;setang -23.398714 -23.115124 0.000000",
@@ -549,8 +549,58 @@ const rawNades = [
     },
 ];
 
+const rawInsta = [
+    {
+        throwPos: { x: 41.5, y: 22.3 },
+        landPos: { x: 67.3, y: 64.4 },
+        title: "CT Instant Stairs Smokes",
+        dir: "Insta Stairs Smokes",
+        exec: "anubis",
+        shortcut: "F6",
+        spawns: [
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STATIONARY,
+                precision: PrecisionTypes.RELAXED,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STATIONARY,
+                precision: PrecisionTypes.RELAXED,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STATIONARY,
+                precision: PrecisionTypes.RELAXED,
+            },
+            {
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STEP,
+                precision: PrecisionTypes.DYNAMIC,
+            },
+        ]
+    },
+];
+
 export const anubisNades = rawNades.map(nade => {
     const slug = nade.information.title
+        .toLowerCase()
+        .replace(/\s+/g, '_');
+
+    return {
+        id: slug, ...nade,
+    };
+});
+export const anubisInstaNades = rawInsta.map(nade => {
+    const slug = nade.title
         .toLowerCase()
         .replace(/\s+/g, '_');
 

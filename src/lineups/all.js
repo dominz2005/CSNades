@@ -1,9 +1,9 @@
 import { dust2Nades } from "./dust2";
-import { mirageNades } from "./mirage";
+import { mirageNades, mirageInstaNades } from "./mirage";
 import { overpassNades } from "./overpass";
-import { ancientNades } from "./ancient";
-import { infernoNades } from "./inferno";
-import { anubisNades } from "./anubis";
+import { ancientNades, ancientInstaNades } from "./ancient";
+import { infernoNades, infernoInstaNades } from "./inferno";
+import { anubisNades, anubisInstaNades } from "./anubis";
 import { nukeNades } from "./nuke";
 
 export const allNades = [
@@ -14,4 +14,11 @@ export const allNades = [
     ...infernoNades.map(nade => ({ ...nade, map: 'inferno' })),
     ...anubisNades.map(nade => ({ ...nade, map: 'anubis' })),
     ...nukeNades.map(nade => ({ ...nade, map: 'nuke' })),
+];
+
+export const allInstaNades = [
+    ...ancientInstaNades.map(nade => ({ ...nade, map: 'ancient' })),
+    ...anubisInstaNades.map(nade => ({ ...nade, map: 'anubis' })),
+    ...infernoInstaNades.map(nade => ({ ...nade, map: 'inferno' })),
+    ...mirageInstaNades.map(nade => ({ ...nade, map: 'mirage' })),
 ];

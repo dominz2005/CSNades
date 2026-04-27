@@ -547,6 +547,23 @@ const rawNades = [
             images: ["lineup.jpg", "position.jpg", "smoke.jpg"]
         }
     },
+    {
+        type: GrenadeTypes.FLASH,
+        throwPos: { x: 58.2, y: 49.6 },
+        landPos: { x: 50.1, y: 52.5 },
+        information: {
+            selfFlash: true,
+            technique: Techniques.STANDING,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Mid From Doors",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos -1503.062256 2652.453613 69.424965;setang -2.607015 -37.227917 0.000000",
+            dir: "Mid/CT Flash",
+            images: ["lineup.jpg", "position.jpg"]
+        }
+    },
 ];
 
 const rawInsta = [

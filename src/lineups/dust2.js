@@ -638,6 +638,23 @@ const rawNades = [
             images: ["lineup.jpg", "position.jpg"]
         }
     },
+    {
+        type: GrenadeTypes.FLASH,
+        throwPos: { x: 46.2, y: 17.7 },
+        landPos: { x: 45.7, y: 38.2 },
+        information: {
+            selfFlash: true,
+            technique: Techniques.JUMP,
+            mouseAction: MouseAction.RIGHT,
+            aiming: AimingTypes.NORMAL,
+            title: "Post Plant Window Entry",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos -337.031250 2423.968994 -27.441956;setang -20.460142 -90.339195 0.000000",
+            dir: "B Site/Post Plant Window Entry",
+            images: ["lineup.jpg", "position.jpg"]
+        }
+    },
 ];
 
 export const dust2Nades = rawNades.map(nade => {

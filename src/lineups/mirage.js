@@ -647,7 +647,7 @@ const rawNades = [
             precision: PrecisionTypes.RELAXED,
             command: "setpos -1120.031250 -967.456360 -104.000000;setang -11.946227 86.149841 0.000000",
             dir: "Mid/Window/Smoke Destruction",
-            images: ["lineup.jpg", "position.jpg", "smoke.jpg"],
+            images: ["lineup.jpg", "position.jpg"],
         }
     },
     {

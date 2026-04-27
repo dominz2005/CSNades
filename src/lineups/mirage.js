@@ -277,7 +277,7 @@ const rawNades = [
             aiming: AimingTypes.NORMAL,
             title: "Balcony From Palace",
             movement: MovementTypes.RUNNING,
-            precision: PrecisionTypes.RELAXED,
+            precision: PrecisionTypes.DYNAMIC,
             command: "setpos 568.101990 -2224.031250 24.000000;setang -9.505346 -164.541611 0.000000",
             dir: "A Site/Wood/From Palace",
             images: ["lineup.jpg", "position.jpg", "fire.jpg"],
@@ -535,6 +535,24 @@ const rawNades = [
     },
     {
         type: GrenadeTypes.SMOKE,
+        throwPos: { x: 75.5, y: 15.8 },
+        landPos: { x: 20.1, y: 19.7 },
+        information: {
+            oneWay: true,
+            technique: Techniques.JUMP,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "B Site Short Cover",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos 473.968750 402.056488 -189.312500;setang -41.019035 -175.181717 0.000000",
+            dir: "B Site/Short Cover",
+            images: ["lineup.jpg", "position.jpg", "smoke.jpg"],
+            groups: ["Mid To B"]
+        }
+    },
+    {
+        type: GrenadeTypes.SMOKE,
         throwPos: { x: 97.4, y: 26.5 },
         landPos: { x: 44.9, y: 33.3 },
         information: {
@@ -677,11 +695,142 @@ const rawNades = [
             aiming: AimingTypes.NORMAL,
             title: "Underpass Exit",
             movement: MovementTypes.RUNNING,
-            precision: PrecisionTypes.RELAXED,
+            precision: PrecisionTypes.DYNAMIC,
             command: "setpos -1042.742432 -286.649292 -304.000000;setang -8.217232 -72.679222 0.000000",
             dir: "Under/Exit/Smoke",
             images: ["lineup.jpg", "position.jpg", "smoke.jpg"],
             groups: ["Underpass Exit"]
+        }
+    },
+    {
+        type: GrenadeTypes.SMOKE,
+        throwPos: { x: 60.6, y: 17.4 },
+        landPos: { x: 18.4, y: 7.1 },
+        information: {
+            technique: Techniques.JUMP,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Plat Full Cover",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.EXACT,
+            command: "setpos -148.031250 358.049530 18.950928;setang -58.278049 168.054337 0.000000",
+            dir: "B Site/Plat Cover",
+            images: ["lineup.jpg", "position.jpg", "smoke.jpg"]
+        }
+    },
+    {
+        type: GrenadeTypes.FLASH,
+        throwPos: { x: 77.3, y: 65.3 },
+        landPos: { x: 76.4, y: 70.8 },
+        information: {
+            technique: Techniques.STANDING,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Ramp TT Entry",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos 560.045105 -1399.968750 -191.352173;setang -27.159056 -17.639561 0.000000",
+            dir: "A Site/Ramp TT Entry",
+            images: ["lineup.jpg", "position.jpg"]
+        }
+    },
+    {
+        type: GrenadeTypes.FLASH,
+        throwPos: { x: 72.4, y: 72.9 },
+        landPos: { x: 71.4, y: 66.9 },
+        information: {
+            technique: Techniques.STANDING,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Ramp TT Exit",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos 320.885376 -1711.942505 -115.515625;setang 39.435024 149.145309 0.000000",
+            dir: "A Site/Ramp TT Exit",
+            images: ["lineup.jpg", "position.jpg"]
+        }
+    },
+    {
+        type: GrenadeTypes.FIRE,
+        throwPos: { x: 63.6, y: 65.5 },
+        landPos: { x: 64.7, y: 81.0 },
+        information: {
+            technique: Techniques.JUMP,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Balcony From Tetris",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos -77.320190 -1475.528687 -104.000000;setang 1.485018 -72.155670 0.000000",
+            dir: "A Site/Wood/From Tetris",
+            images: ["lineup.jpg", "position.jpg", "fire.jpg"],
+        }
+    },
+    {
+        type: GrenadeTypes.HE,
+        throwPos: { x: 45.3, y: 54.8 },
+        landPos: { x: 48.7, y: 50.7 },
+        information: {
+            technique: Techniques.STANDING,
+            mouseAction: MouseAction.RIGHT,
+            aiming: AimingTypes.NORMAL,
+            title: "Connector Smoke Destruction",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos -807.958984 -1055.968750 -104.000000;setang -31.713003 62.586258 0.000000",
+            dir: "Mid/Connector/Smoke Destruction",
+            images: ["lineup.jpg", "position.jpg"],
+        }
+    },
+    {
+        type: GrenadeTypes.SMOKE,
+        throwPos: { x: 61.3, y: 91.3 },
+        landPos: { x: 43.8, y: 91.3 },
+        information: {
+            technique: Techniques.STANDING,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Ticket Booth From Fire Box",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos -129.687012 -2412.957520 -100.156250;setang -2.837998 166.605316 -0.000000",
+            dir: "A Site/Fire Box/Ticket",
+            images: ["lineup.jpg", "position.jpg", "smoke.jpg"],
+            groups: ["Fire Box Combo"]
+        }
+    },
+    {
+        type: GrenadeTypes.SMOKE,
+        throwPos: { x: 61.3, y: 91.3 },
+        landPos: { x: 48.2, y: 69.8 },
+        information: {
+            technique: Techniques.STANDING,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Jungle And Connector From Fire Box",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos -129.687012 -2412.957520 -100.156250;setang 2.046010 121.791435 0.000000",
+            dir: "A Site/Fire Box/Jungle and Connector",
+            images: ["lineup.jpg", "position.jpg", "smoke.jpg"],
+            groups: ["Fire Box Combo"]
+        }
+    },
+    {
+        type: GrenadeTypes.SMOKE,
+        throwPos: { x: 61.3, y: 91.3 },
+        landPos: { x: 52.9, y: 69.1 },
+        information: {
+            technique: Techniques.STANDING,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Stairs From Fire Box",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos -129.687012 -2412.957520 -100.156250;setang -16.730991 111.033348 0.000000",
+            dir: "A Site/Fire Box/Stairs",
+            images: ["lineup.jpg", "position.jpg", "smoke.jpg"],
+            groups: ["Fire Box Combo"]
         }
     },
 ];

@@ -661,8 +661,8 @@ const rawInsta = [
     {
         throwPos: { x: 92.6, y: 35.2 },
         landPos: { x: 48.7, y: 37.9 },
-        title: "CT Instant Banana Smoke",
-        dir: "Insta Banana Smokes",
+        title: "CT Instant Banana Smokes",
+        dir: "Insta Banana Smoke",
         exec: "inferno",
         shortcut: "F6",
         spawns: [

@@ -34,10 +34,33 @@
             videoVisible.value = newVal.spawns.map(() => true);
         }
     }, { immediate: true });
+
+
+    const imgRef = ref(null);
+
+    const image = "twoje-zdjecie.jpg";
+
+    const handleClick = (e) => {
+    const img = imgRef.value;
+    const rect = img.getBoundingClientRect();
+
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+    console.log({
+        x: Number(x.toFixed(2)),
+        y: Number(y.toFixed(2)),
+    });
+    };
 </script>
 
 <template>
-    <main class="max-w-300 mx-auto mb-16">
+    <main class="max-w-300 mx-auto mb-16 relative">
+        <div class="fixed top-24 -ms-52 text-white flex flex-col gap-3 text-xl border-s ps-5">
+            <a href="#spawns" class="p-0.5 hover:underline">Spawns</a>
+            <a href="#commands" class="p-0.5 hover:underline">Commands</a>
+            <a :href="`#spawn${index}`" class="p-0.5 hover:underline" v-for="(item, index) in nade.spawns">Spawn #{{ index + 1 }}</a>
+        </div>
         <RouterLink :to="{ name: nade.map }" class="flex gap-2 items-center group py-1 my-4">
             <Arrow class="size-8 text-white rotate-180" />
             <p class="text-white text-2xl font-medium  group-hover:underline">
@@ -48,12 +71,20 @@
         <div>
             <img class="h-160 object-cover" :src="`${lineupDir}${nade.map}/${nade.dir}/smoke.jpg`">
         </div>
-        <div class="mt-16">
+        <div class="mt-16" id="spawns">
             <h2 class="mb-4 text-white font-semibold text-4xl">Spawns</h2>
-            <img class="h-160 object-cover" :src="`${lineupDir}${nade.map}/${nade.dir}/spawns.jpg`">
+            <div class="relative w-full" @click="handleClick" ref="imgRef">
+                <img class="w-full h-160" :src="`${lineupDir}${nade.map}/${nade.dir}/spawns.jpg`">
+                <a
+                    v-for="(item, index) in nade.spawns" :key="index"
+                    :href="`#spawn${index}`"
+                    class="absolute block w-4 h-4 border-2 border-zinc-800 bg-zinc-800/10 hover:bg-zinc-800/40 transition-colors duration-75 cursor-pointer transform"
+                    :style="item.position"
+                ></a>
+            </div>
             <p class="italic text-zinc-300 my-4">Click on the spawn above to directly view the lineup</p>
         </div>
-        <div class="mt-16">
+        <div class="mt-16" id="commands">
             <h2 class="mb-4 text-white font-semibold text-4xl">Spawn Practice Command</h2>
             <div class="space-y-3">
                 <p class="text-zinc-300 leading-relaxed">
@@ -71,7 +102,7 @@
                 </p>
             </div>
         </div>
-        <div class="mt-16" v-for="(item, index) in nade.spawns" :key="index">
+        <div class="mt-16" v-for="(item, index) in nade.spawns" :key="index" :id="`spawn${index}`">
             <h2 class="mb-4 text-white font-semibold text-4xl">Spawn #{{ index + 1 }}</h2>
             <div class="bg-zinc-800 border border-zinc-600 rounded-sm overflow-hidden">
                 <div class="h-160">

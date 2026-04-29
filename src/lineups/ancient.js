@@ -418,6 +418,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.WALKING,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '23.29%', top: '30.78%', width: '8%', height: '17%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -425,6 +426,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STEP,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '32.96%', top: '40.16%', width: '7%', height: '15%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -432,6 +434,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STEP,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '46.29%', top: '40.16%', width: '7%', height: '15%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -439,6 +442,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STEP,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '59.79%', top: '40.16%', width: '7%', height: '15%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -446,6 +450,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.WALKING,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '67.46%', top: '31.25%', width: '9%', height: '17%' }
             },
         ]
     },
@@ -463,6 +468,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.RUNNING,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '23.29%', top: '30.78%', width: '8%', height: '17%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -470,6 +476,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.RUNNING,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '32.96%', top: '40.16%', width: '7%', height: '15%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -477,6 +484,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.RUNNING,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '46.29%', top: '40.16%', width: '7%', height: '15%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -484,6 +492,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.RUNNING,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '59.79%', top: '40.16%', width: '7%', height: '15%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -491,6 +500,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.RUNNING,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '67.46%', top: '31.25%', width: '9%', height: '17%' }
             },
         ]
     },
@@ -508,6 +518,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.JUMPSTEP,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '21.71%', top: '46.41%', width: '10%', height: '28%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -515,6 +526,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.JUMPSTEP,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '57.46%', top: '34.84%', width: '7%', height: '23%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -522,6 +534,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.JUMPSTEP,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '69.38%', top: '42.34%', width: '13%', height: '31%' }
             },
         ]
     },

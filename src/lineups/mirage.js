@@ -850,6 +850,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STEP,
                 precision: PrecisionTypes.RELAXED,
+                position: { left: '14.21%', top: '51%', width: '11%', height: '15%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -857,6 +858,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STEP,
                 precision: PrecisionTypes.RELAXED,
+                position: { left: '36.21%', top: '28.28%', width: '6%', height: '17%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -864,6 +866,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STEP,
                 precision: PrecisionTypes.RELAXED,
+                position: { left: '49%', top: '28.28%', width: '6%', height: '17%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -871,6 +874,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STEP,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '62%', top: '28.28%', width: '7%', height: '17%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -878,6 +882,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STEP,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '67.96%', top: '51%', width: '10%', height: '15%' }
             },
         ]
     },

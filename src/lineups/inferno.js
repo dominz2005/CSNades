@@ -672,6 +672,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STATIONARY,
                 precision: PrecisionTypes.RELAXED,
+                position: { left: '43%', top: '11.6%', width: '7%', height: '22%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -679,6 +680,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STATIONARY,
                 precision: PrecisionTypes.RELAXED,
+                position: { left: '35.88%', top: '28.91%', width: '7%', height: '18%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -686,6 +688,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STATIONARY,
                 precision: PrecisionTypes.RELAXED,
+                position: { left: '51.54%', top: '40.47%', width: '7%', height: '17%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -693,6 +696,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STATIONARY,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '40.66%', top: '64.22%', width: '6.5%', height: '15%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -700,6 +704,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STATIONARY,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '53.79%', top: '68.44%', width: '7%', height: '17%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -707,6 +712,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STATIONARY,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '61.88%', top: '57.66%', width: '9%', height: '17%' }
             },
         ]
     },
@@ -724,6 +730,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STATIONARY,
                 precision: PrecisionTypes.RELAXED,
+                position: { left: '43%', top: '11.6%', width: '7%', height: '22%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -731,6 +738,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STATIONARY,
                 precision: PrecisionTypes.RELAXED,
+                position: { left: '35.88%', top: '28.91%', width: '7%', height: '18%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -738,6 +746,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.STATIONARY,
                 precision: PrecisionTypes.RELAXED,
+                position: { left: '51.54%', top: '40.47%', width: '7%', height: '17%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -745,6 +754,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.JUMPSTEP,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '40.66%', top: '64.22%', width: '6.5%', height: '15%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -752,6 +762,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.JUMPSTEP,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '53.79%', top: '68.44%', width: '7%', height: '17%' }
             },
             {
                 technique: Techniques.JUMP,
@@ -759,6 +770,7 @@ const rawInsta = [
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.JUMPSTEP,
                 precision: PrecisionTypes.DYNAMIC,
+                position: { left: '61.88%', top: '57.66%', width: '9%', height: '17%' }
             },
         ]
     },

@@ -104,6 +104,7 @@ import Book from '@/icons/Book.vue';
 
                 @mouseenter="filterStore.setHoveredInstaSmoke(item)"
                 @mouseleave="filterStore.clearHoveredInstaSmoke()"
+                @click="filterStore.clearHoveredInstaSmoke()"
             >
                 <Book class="text-purple-400 size-5" />
                 <p class="text-white group-hover:underline">{{ item.title }}</p>

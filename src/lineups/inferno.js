@@ -37,6 +37,38 @@ const rawNades = [
     },
     {
         type: GrenadeTypes.SMOKE,
+        throwPos: { x: 21.0, y: 69.8 },
+        landPos: { x: 62.2, y: 21.9 },
+        information: {
+            technique: Techniques.JUMP,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "CT From TT",
+            movement: MovementTypes.WALKING,
+            precision: PrecisionTypes.DYNAMIC,
+            command: "setpos -858.947144 450.638672 36.013855;setang -39.742065 52.078384 -0.000000",
+            dir: "B Site/CT/From TT",
+            images: ["lineup.jpg", "position.jpg", "smoke.jpg"]
+        }
+    },
+    {
+        type: GrenadeTypes.SMOKE,
+        throwPos: { x: 26.7, y: 86.5 },
+        landPos: { x: 70.7, y: 66.6 },
+        information: {
+            technique: Techniques.JUMP,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Left Side Of Top Mid",
+            movement: MovementTypes.JUMPSTEP,
+            precision: PrecisionTypes.RELAXED,
+            command: "setpos -638.393677 -266.968750 66.825943;setang -34.907303 24.801943 0.000000",
+            dir: "A Site/Top Mid Left",
+            images: ["lineup.jpg", "position.jpg", "smoke.jpg"]
+        }
+    },
+    {
+        type: GrenadeTypes.SMOKE,
         throwPos: { x: 54.9, y: 86.8 },
         landPos: { x: 79.7, y: 51.4 },
         information: {

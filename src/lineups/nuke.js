@@ -271,8 +271,8 @@ const rawNades = [
     },
     {
         type: GrenadeTypes.SMOKE,
-        throwPos: { x: 27.3, y: 60.3 },
-        landPos: { x: 59.0, y: 87.3 },
+        throwPos: { x: 27.1, y: 57.1 },
+        landPos: { x: 60.2, y: 76.9 },
         information: {
             technique: Techniques.JUMP,
             mouseAction: MouseAction.LEFT,
@@ -288,8 +288,8 @@ const rawNades = [
     },
     {
         type: GrenadeTypes.SMOKE,
-        throwPos: { x: 27.3, y: 60.3 },
-        landPos: { x: 62.1, y: 88.5 },
+        throwPos: { x: 27.1, y: 57.1 },
+        landPos: { x: 63.8, y: 77.8 },
         information: {
             technique: Techniques.JUMP,
             mouseAction: MouseAction.LEFT,

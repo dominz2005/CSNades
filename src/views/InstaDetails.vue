@@ -38,19 +38,17 @@
 
     const imgRef = ref(null);
 
-    const image = "twoje-zdjecie.jpg";
-
     const handleClick = (e) => {
-    const img = imgRef.value;
-    const rect = img.getBoundingClientRect();
+        const img = imgRef.value;
+        const rect = img.getBoundingClientRect();
 
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
 
-    console.log({
-        x: Number(x.toFixed(2)),
-        y: Number(y.toFixed(2)),
-    });
+        console.log({
+            x: Number(x.toFixed(2)),
+            y: Number(y.toFixed(2)),
+        });
     };
 </script>
 
@@ -59,7 +57,7 @@
         <div class="fixed top-24 -ms-52 text-white flex flex-col gap-3 text-xl border-s ps-5">
             <a href="#spawns" class="p-0.5 hover:underline">Spawns</a>
             <a href="#commands" class="p-0.5 hover:underline">Commands</a>
-            <a :href="`#spawn${index}`" class="p-0.5 hover:underline" v-for="(item, index) in nade.spawns">Spawn #{{ index + 1 }}</a>
+            <a :href="`#spawn${index}`" class="p-0.5 hover:underline" v-for="(item, index) in nade.spawns">Spawn #{{ item.id != undefined ? item.id : index + 1 }}</a>
         </div>
         <RouterLink :to="{ name: nade.map }" class="flex gap-2 items-center group py-1 my-4">
             <Arrow class="size-8 text-white rotate-180" />
@@ -103,7 +101,7 @@
             </div>
         </div>
         <div class="mt-16" v-for="(item, index) in nade.spawns" :key="index" :id="`spawn${index}`">
-            <h2 class="mb-4 text-white font-semibold text-4xl">Spawn #{{ index + 1 }}</h2>
+            <h2 class="mb-4 text-white font-semibold text-4xl">Spawn #{{ item.id != undefined ? item.id : index + 1 }}</h2>
             <div class="bg-zinc-800 border border-zinc-600 rounded-sm overflow-hidden">
                 <div class="h-160">
                     <video v-if="videoVisible[index]" :src="`${lineupDir}${nade.map}/${nade.dir}/Spawn ${index + 1}/video.mp4`" class="w-full object-cover h-160" controls playsinline loop muted preload="metadata"></video>

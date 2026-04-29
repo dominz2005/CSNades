@@ -513,28 +513,68 @@ const rawInsta = [
         shortcut: "F7",
         spawns: [
             {
+                id: 1,
                 technique: Techniques.JUMP,
                 mouseAction: MouseAction.LEFT,
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.JUMPSTEP,
                 precision: PrecisionTypes.DYNAMIC,
-                position: { left: '21.71%', top: '46.41%', width: '10%', height: '28%' }
+                position: { left: '28%', top: '49.38%', width: '7.8%', height: '28%' }
             },
             {
+                id: 3,
                 technique: Techniques.JUMP,
                 mouseAction: MouseAction.LEFT,
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.JUMPSTEP,
                 precision: PrecisionTypes.DYNAMIC,
-                position: { left: '57.46%', top: '34.84%', width: '7%', height: '23%' }
+                position: { left: '56.46%', top: '43.38%', width: '6%', height: '22%' }
             },
             {
+                id: 4,
                 technique: Techniques.JUMP,
                 mouseAction: MouseAction.LEFT,
                 aiming: AimingTypes.NORMAL,
                 movement: MovementTypes.JUMPSTEP,
                 precision: PrecisionTypes.DYNAMIC,
-                position: { left: '69.38%', top: '42.34%', width: '13%', height: '31%' }
+                position: { left: '67.54%', top: '47.97%', width: '8.2%', height: '26%' }
+            },
+        ]
+    },
+    {
+        throwPos: { x: 49.1, y: 92 },
+        landPos: { x: 57.5, y: 58.8 },
+        title: "TT Instant Top Heaven Smokes",
+        dir: "Insta Heaven TT Smokes",
+        exec: "ancient_tt",
+        shortcut: "F7",
+        spawns: [
+            {
+                id: 2,
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.CROUCH,
+                movement: MovementTypes.STATIONARY,
+                precision: PrecisionTypes.RELAXED,
+                position: { left: '49.04%', top: '49.38%', width: '7%', height: '25%' }
+            },
+            {
+                id: 3,
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STEP,
+                precision: PrecisionTypes.DYNAMIC,
+                position: { left: '56.46%', top: '43.38%', width: '6%', height: '22%' }
+            },
+            {
+                id: 4,
+                technique: Techniques.JUMP,
+                mouseAction: MouseAction.LEFT,
+                aiming: AimingTypes.NORMAL,
+                movement: MovementTypes.STEP,
+                precision: PrecisionTypes.DYNAMIC,
+                position: { left: '67.54%', top: '47.97%', width: '8.2%', height: '26%' }
             },
         ]
     },

@@ -784,8 +784,8 @@ const rawInsta = [
                 technique: Techniques.JUMP,
                 mouseAction: MouseAction.LEFT,
                 aiming: AimingTypes.NORMAL,
-                movement: MovementTypes.JUMPSTEP,
-                precision: PrecisionTypes.DYNAMIC,
+                movement: MovementTypes.JUMP,
+                precision: PrecisionTypes.RELAXED,
                 position: { left: '40.66%', top: '64.22%', width: '6.5%', height: '15%' }
             },
             {

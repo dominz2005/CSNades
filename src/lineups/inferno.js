@@ -687,6 +687,22 @@ const rawNades = [
             images: ["lineup.jpg", "position.jpg", "smoke.jpg"]
         }
     },
+    {
+        type: GrenadeTypes.SMOKE,
+        throwPos: { x: 50.4, y: 40.2 },
+        landPos: { x: 45.6, y: 44.6 },
+        information: {
+            technique: Techniques.STANDING,
+            mouseAction: MouseAction.LEFT,
+            aiming: AimingTypes.NORMAL,
+            title: "Whole Banana",
+            movement: MovementTypes.STATIONARY,
+            precision: PrecisionTypes.SIMPLE,
+            command: "setpos 457.229431 1833.358765 199.999969;setang -44.721069 -126.846191 0.000000",
+            dir: "Banana/Whole",
+            images: ["lineup.jpg", "position.jpg", "smoke.jpg"]
+        }
+    },
 ];
 
 const rawInsta = [
